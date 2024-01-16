@@ -1,27 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+@font-face {
+    font-family: 'Misto';
+    src: url('/fonts/Misto.eot');
+    src: url('/fonts/Misto.eot') format('embedded-opentype'),
+         url('/fonts/Misto.woff2') format('woff2'),
+         url('/fonts/Misto.woff') format('woff'),
+         url('/fonts/Misto.ttf') format('truetype'),
+         url('/fonts/Misto.svg#Misto') format('svg');
+}
+@font-face {
+    font-family: 'Horror';
+    src: url('/fonts/Horror.ttf');
+}
+html,body,:root {
+    background: #141414;
+    height: 100%;
+    color:#fff;
+    scroll-behavior: smooth;
+    position: relative;
+}
+.navbar{
+    background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.watchnow,.category-card{
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.devices{
+    background: linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%), #0F0F0F;
+}
+
+.notfound{
+    background-image: url(/homegrid/empty.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }

@@ -1,7 +1,7 @@
 'use client'
 import {CiSearch} from "react-icons/ci";
 import {IoIosNotificationsOutline} from "react-icons/io";
-
+import WatchNow from "@/components/Homepage/WatchNow";
 import Link from "next/link";
 
 import {usePathname, useRouter} from "next/navigation";
@@ -26,10 +26,9 @@ const navItems = [
 ]
 export default function Navbar(){
     const router = usePathname();
-    return(
+    return( 
         <div
-
-            className='flex navbar justify-between  items-center py-8 px-40'>
+            className='flex navbar fixed top-0 w-[100%] z-100 justify-between  items-center py-8 px-40'>
             <div className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                     <svg xmlns="http://www.w3.org/2000/svg" x="20" y="20" width="22" height="22" viewBox="0 0 22 22"
