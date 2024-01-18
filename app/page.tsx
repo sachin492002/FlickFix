@@ -10,7 +10,7 @@ import {addLatest, addTrending} from "@/lib/store/movieSlice";
 export default  function Home() {
 
     const dispatch = useAppDispatch();
-    const {status,trending } = useAppSelector((state)=>state.movie) ;
+    const {status,trending } = useAppSelector(state=> state.movie) ;
 
     useEffect(() => {
         const fetchData = async () => {
