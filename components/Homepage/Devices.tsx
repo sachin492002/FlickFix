@@ -1,4 +1,5 @@
 import {FaPlay} from "react-icons/fa";
+import Link from "next/link";
 
 
 export default function Devices(){
@@ -58,10 +59,14 @@ export default function Devices(){
                     <h1 className='text-3xl'>Start watching today!</h1>
                     <p className='text-primary-grey-text'>Don`t wait! Go ahead with your favourite movies.</p>
                 </div>
+
+
+                <Link href={'/movies'}>
                 <button className='bg-primary flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
                     <FaPlay/>
                     Watching Now
                 </button>
+                </Link>
             </div>
         </div>
     )

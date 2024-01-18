@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
@@ -8,10 +9,10 @@
     font-family: 'Misto';
     src: url('/fonts/Misto.eot');
     src: url('/fonts/Misto.eot') format('embedded-opentype'),
-         url('/fonts/Misto.woff2') format('woff2'),
-         url('/fonts/Misto.woff') format('woff'),
-         url('/fonts/Misto.ttf') format('truetype'),
-         url('/fonts/Misto.svg#Misto') format('svg');
+    url('/fonts/Misto.woff2') format('woff2'),
+    url('/fonts/Misto.woff') format('woff'),
+    url('/fonts/Misto.ttf') format('truetype'),
+    url('/fonts/Misto.svg#Misto') format('svg');
 }
 @font-face {
     font-family: 'Horror';
@@ -24,14 +25,20 @@ html,body,:root {
     scroll-behavior: smooth;
     position: relative;
 }
+
 .navbar{
     background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
 }
-
+.movie-info{
+    background: white;
+    background: linear-gradient(270deg, rgba(37,40,40,1) 9%, #141414 100%);
+}
 .watchnow,.category-card{
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%);
 }
-
+.watchnow{
+    z-index: 10;
+}
 .devices{
     background: linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%), #0F0F0F;
 }
@@ -42,3 +49,4 @@ html,body,:root {
     background-size: cover;
     height: 100vh;
 }
+
