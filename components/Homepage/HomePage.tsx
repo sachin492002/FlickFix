@@ -11,7 +11,6 @@ export default  function HomePage() {
             <WatchNow/>
             <Category/>
             <Devices/>
-            <Footer/>
         </>
     )
 }

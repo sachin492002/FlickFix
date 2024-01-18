@@ -15,6 +15,7 @@ module.exports = {
           "grey":"#1F1F1F",
           "black":"#0F0F0F",
           "grey-text":"#999",
+          "card-grey":"#1A1A1A"
         },
         secondary: "#282828",
         "gray-200": "#EAECF0",

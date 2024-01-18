@@ -1,6 +1,6 @@
 import React, {useRef, useState} from "react";
 import {useAppSelector} from "@/lib/hooks";
-import {A11y, Navigation, Pagination, Scrollbar} from "swiper/modules";
+import {A11y, Autoplay, Navigation, Pagination, Scrollbar} from "swiper/modules";
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -15,7 +15,7 @@ export default function BannerSlider(){
         isFirst: true,
         isLast: false,
     });
-    const SlideRef = useRef();
+    const SlideRef:any = useRef();
 
     const handleNext = () => {
         SlideRef.current.swiper.slideNext();
@@ -25,7 +25,7 @@ export default function BannerSlider(){
         SlideRef.current.swiper.slidePrev();
     };
 
-    const onSlideChange = (swiper) => {
+    const onSlideChange = (swiper:any) => {
 
         handleSlideByState({
             isFirst: swiper.isBeginning,
@@ -35,19 +35,23 @@ export default function BannerSlider(){
 
     const { isLast, isFirst } = slideBegOrNot;
 
-    const {trending} = useAppSelector((state)=>state.movie) || [];
+    const {trending} = useAppSelector((state:any)=>state.movie) || [];
 
     return(
         <div className='flex  items-center flex-wrap p-24 w-full'>
             <Swiper
-                className='w-full relative  -z-10'
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                className='mySwiper w-full relative  -z-10'
+                modules={[Autoplay,Navigation, Pagination, Scrollbar, A11y]}
                 slidesPerView={1}
+                // pagination={pagination}
                 ref={SlideRef}
-                autoplay={{
-                    pauseOnMouseEnter: true,
-                    delay: 2,
-                }}
+                autoplay={
+                {
+                    delay:2500,
+                    disableOnInteraction:true,
+                }
+                }
+
                 onSlideChange={onSlideChange}
                 onSwiper={(swiper) => console.log(swiper)}
             >
@@ -61,7 +65,7 @@ export default function BannerSlider(){
                 </div>
 
                 {
-                    trending?.map((g) => {
+                    trending?.map((g:any) => {
                         return (
                             <SwiperSlide key={g.name}>
                                 <div className={`w-full flex flex-row `}>

@@ -10,13 +10,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import MovieCard from "@/components/MovieComponents/MovieCard";
+import {Movie} from "@/types";
 
-export default function Slider({data,type}){
+interface Props{
+    data : any,
+    type :String,
+}
+export default function Slider({data,type}:Props){
+
     const [slideBegOrNot, handleSlideByState] = useState({
         isFirst: true,
         isLast: false,
     });
-    const SlideRef = useRef();
+    const SlideRef:any = useRef();
 
     const handleNext = () => {
         SlideRef.current.swiper.slideNext();
@@ -26,7 +32,7 @@ export default function Slider({data,type}){
         SlideRef.current.swiper.slidePrev();
     };
 
-    const onSlideChange = (swiper) => {
+    const onSlideChange = (swiper:any) => {
 
         handleSlideByState({
             isFirst: swiper.isBeginning,
@@ -53,7 +59,7 @@ export default function Slider({data,type}){
         className='w-full '
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
+        spaceBetween={30}
         ref={SlideRef}
         onSlideChange={onSlideChange}
         slidesPerView={4}
@@ -61,7 +67,7 @@ export default function Slider({data,type}){
     >
 
         {
-            data.map((g) => {
+            data?.map((g:any) => {
                 return (
                     <SwiperSlide key={g.name}>
                         {(type=='genre') ? <GenreCard genre={g}/> : <MovieCard movie={g}/>}
