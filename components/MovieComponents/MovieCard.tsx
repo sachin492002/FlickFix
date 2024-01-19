@@ -1,4 +1,4 @@
-import {FaArrowRight} from "react-icons/fa";
+
 import {Movie} from "@/types";
 import {GoClock} from "react-icons/go";
 import Link from "next/link";

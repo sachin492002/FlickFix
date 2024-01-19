@@ -1,4 +1,4 @@
-import Category from "@/components/Homepage/Category";
+
 import Slider from "@/components/Slider/Slider";
 import {genres} from "@/components/utils";
 import {Movie} from "@/types";
