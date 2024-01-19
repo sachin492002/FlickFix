@@ -12,7 +12,7 @@ export default async function Page({ params }: { params: { slug: string } }){
     // console.log(movie)
     return(
         <div className='flex w-full justify-center items-center mt-44'>
-            <ReactPlayer url={'https://vdncloud.org/movies/iframe/d04xdksxRG5GTXZpRTRpM2lmSmlIOS9PY3d6QzIwMW83ZEZFbU1pUm5vSlZVVnBtMk9iRmJNTUdWdz09'} controls={true} />
+            <ReactPlayer url={'https://youtu.be/d9MyW72ELq0?si=_LJdsba1xYTeiS8P'} controls={true} width={1024} height={720}/>
         </div>
     )
 }
