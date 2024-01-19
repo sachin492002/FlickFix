@@ -25,9 +25,11 @@ export async function scrapmovies(url:string,type:string){
         for (let index = 0; index < movieContainer.length; index++) {
             const movieElement = movieContainer.eq(index);
             const movieThumbnail = movieElement.find('.movie-thumbnail');
-            const movieLink = movieThumbnail.find('a').attr('href');
+            const movieLink:string|undefined = movieThumbnail.find('a').attr('href');
 
-            await page.goto(movieLink, { waitUntil: 'domcontentloaded' });
+            if (movieLink != null) {
+                await page.goto(movieLink, {waitUntil: 'domcontentloaded'});
+            }
             const movieHtml = await page.content();
             await page.waitForSelector('#first');
             const moviePage = cheerio.load(movieHtml);
@@ -52,8 +54,8 @@ export async function scrapmovies(url:string,type:string){
             const serverPlayDropdown = serverPlayButton.find('#list_of');
 
             // Extracting links from the dropdown menu
-            const streamlinks = await page.evaluate(() => {
-                const links = [];
+            const streamlinks:any = await page.evaluate(() => {
+                const links:any = [];
                 const items = document.querySelectorAll('#list_of .sv-item');
                 items.forEach((item) => {
                     const dataId = item.getAttribute('data-id');
