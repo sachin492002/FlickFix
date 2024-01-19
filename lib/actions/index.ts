@@ -42,7 +42,7 @@ export async function getTrending(){
         }
         return JSON.stringify(trending);
 
-    }catch (error){
+    }catch (error:any){
         throw new Error("Failed To get Data cause :"+error.message);
     }
 }
@@ -57,7 +57,7 @@ export async function getLatest(){
         }
         return JSON.stringify(latest);
 
-    }catch (error){
+    }catch (error:any){
         throw new Error("Failed To get Data cause :"+error.message);
     }
 }
@@ -73,8 +73,21 @@ export async function getAllMovies(){
         }
         return JSON.stringify(movies);
 
-    }catch (error){
+    }catch (error:any){
         throw new Error("Failed To get Data cause :"+error.message);
     }
 }
 
+export async function getMovie(id:string){
+    try{
+        connectToDB();
+        const movie = await Movie.find({_id : id})
+        if(!movie){
+            return;
+        }
+        return JSON.stringify(movie);
+    }
+    catch (error:any){
+        throw new Error("Failed To get Data cause :"+error.message);
+    }
+}

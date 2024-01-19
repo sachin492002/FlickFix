@@ -1,11 +1,44 @@
-import Image from "next/image";
-import {FaPlay} from "react-icons/fa";
 
+
+import QuestionCard from "@/app/support/QuestionCard";
+
+
+const faqs = [
+    {
+        question : 'What is StreamJet?',
+        ans : 'StreamJet is a streaming service that allows you to watch movies and shows on demand.'
+    },
+    {
+        question: 'How much does StreamVibe cost?',
+        ans : 'StreamJet is abs'
+    },
+    {
+        question: 'What content is available on StreamVibe?',
+        ans:'',
+    },
+    {
+        question: 'How can I watch StreamVibe?',
+        ans : '',
+    },
+    {
+        question: 'What is the StreamVibe free trial?',
+        ans : '',
+    },
+    {
+        question: 'How do I contact StreamVibe customer support?',
+        ans: '',
+    },
+    {
+        question: 'What are the StreamVibe payment methods?',
+        ans:'',
+    }
+
+]
 
 export default function Support(){
 
     return(
-        <div className='mt-44 flex flex-col px-12 gap-10'>
+        <div className='mt-44 flex flex-col px-12 py-12 gap-10'>
             <div className='inline-flex justify-between gap-10 w-full'>
                 <div className='flex flex-col w-2/4  gap-4'>
                     <h1 className='text-4xl'>Welcome To Our Support Page!</h1>
@@ -53,11 +86,20 @@ export default function Support(){
                     </button>
                 </form>
             </div>
-            <div className='flex flex-col'>
-                <div className='inline-flex'>
+            <div className='flex flex-col gap-4'>
+                <div className='inline-flex justify-between'>
                     <div className='flex flex-col'>
-
+                         <h1 className='text-2xl font-manrope'>Frequently Asked Questions</h1>
+                         <p className='text-primary-grey-text'>Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamJet.</p>
                     </div>
+                    <button className='bg-primary w-40 text-center text-white flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
+                        Ask a question
+                    </button>
+                </div>
+                <div className='flex flex-col gap-6'>
+                    {faqs?.map((faq,index:number)=>{
+                        return <QuestionCard key={faq.question} faq={faq} index={index}/>
+                    })}
                 </div>
             </div>
         </div>

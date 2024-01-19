@@ -64,3 +64,16 @@ html,body,:root {
     color: #fff;
     background: #007aff;
 }
+
+.question-card{
+
+    border: 5px solid;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+
+
+
+    border-image: linear-gradient(90deg, rgba(229, 0, 0, 0.00) 0%, #E50000 16.67%, rgba(229, 0, 0, 0.00) 100%) 1;
+
+}
