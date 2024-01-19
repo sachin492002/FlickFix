@@ -14,23 +14,23 @@ const faqs = [
     },
     {
         question: 'What content is available on StreamVibe?',
-        ans:'',
+        ans:'hello',
     },
     {
         question: 'How can I watch StreamVibe?',
-        ans : '',
+        ans : 'hello',
     },
     {
         question: 'What is the StreamVibe free trial?',
-        ans : '',
+        ans : 'hello',
     },
     {
         question: 'How do I contact StreamVibe customer support?',
-        ans: '',
+        ans: 'helo',
     },
     {
         question: 'What are the StreamVibe payment methods?',
-        ans:'',
+        ans:'helllo',
     }
 
 ]
@@ -42,7 +42,7 @@ export default function Support(){
             <div className='inline-flex justify-between gap-10 w-full'>
                 <div className='flex flex-col w-2/4  gap-4'>
                     <h1 className='text-4xl'>Welcome To Our Support Page!</h1>
-                     <p className='text-primary-grey-text'>We're here to help you with any problems you may be having with our product.</p>
+                     <p className='text-primary-grey-text'>We are here to help you with any problems you may be having with our product.</p>
                     <div className='flex flex-col overflow-clip gap-2 p-2 bg-primary-grey justify-center items-center rounded-lg'>
                         <img src='/homegrid/movie-grid.jpg' className='rounded-lg' />
                     </div>
@@ -90,7 +90,7 @@ export default function Support(){
                 <div className='inline-flex justify-between'>
                     <div className='flex flex-col'>
                          <h1 className='text-2xl font-manrope'>Frequently Asked Questions</h1>
-                         <p className='text-primary-grey-text'>Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamJet.</p>
+                         <p className='text-primary-grey-text'>Got questions? We ve got answers! Check out our FAQ section to find answers to the most common questions about StreamJet.</p>
                     </div>
                     <button className='bg-primary w-40 text-center text-white flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
                         Ask a question
