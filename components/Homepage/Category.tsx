@@ -16,19 +16,34 @@ export default function Category(){
     const handlePrev = () => {
         SlideRef.current.slickPrev();
     };
-    var settings = {
+    let settings = {
+        customPaging: function(i:number) {
+            return (
+                <div className='bg-primary-grey-text w-4 dotclass h-1.5 rounded-lg'>
+                </div>
+            );
+        },
+        appendDots: (dots:any) => (
+            <div
+                className=''
+            >
+                <ul className='m-0 flex justify-center'> {dots} </ul>
+            </div>
+        ),
         dots: true,
-        infinite: false,
+        infinite: true,
+        slidesPerRow : 1,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
+        swipeToSlide : true,
         initialSlide: 0,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
@@ -44,13 +59,12 @@ export default function Category(){
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
             }
         ]
     };
-
     return(
         <div className='flex flex-col px-6 md:px-12 py-20 gap-16 overflow-clip' id='category'>
             <div className='flex flex-row justify-between'>
@@ -72,7 +86,7 @@ export default function Category(){
                     </button>
                 </div>
             </div>
-            <SliderComponent data={genres} type={'genre'} reference={SlideRef}/>
+            <SliderComponent data={genres} type={'genre'} reference={SlideRef} settings={settings}/>
         </div>
     )
 }

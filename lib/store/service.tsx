@@ -30,7 +30,7 @@ export const Api = createApi({
     getLatestMovies : builder.query({query:()=>'movie/now_playing?language=en-IN&page=1'}),
     getTopRatedMovies : builder.query({query:()=>'top_rated?language=en-US&page=1'}),
     getMoviesByGenre : builder.query({query:(genre_id)=>`discover/movie?language=en-US&with_genres=${genre_id}&page=1`}),
-    getMovieDetails : builder.query({ query:(movie_id) =>  `movie/${movie_id}?language=en-US`}),
+    getMovieDetails : builder.query({ query:(movie_id) =>  `movie/${movie_id}?append_to_response=credits&language=en-US`}),
     getMovieVideo : builder.query({ query:(movie_id) =>  `/movie/${movie_id}/videos?language=en-US`}),
   }),
 });

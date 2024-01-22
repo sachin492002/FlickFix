@@ -18,7 +18,7 @@ export default function GenrePage({genre}:Props){
 
 
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_MAIN}discover/movie?language=en-US&page=${page}&with_genres=28`,{
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_MAIN}discover/movie?language=en-US&page=${page}&with_genres=${genre}`,{
                 method : 'GET',
                 headers: {
                     "Content-Type": "application/json",

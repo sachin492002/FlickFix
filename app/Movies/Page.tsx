@@ -8,10 +8,6 @@ export default  function Page() {
     const dispatch = useAppDispatch();
   const {trending,now_playing} = useAppSelector((state:any) => state.movie ) || [];
 
-
-
-   console.log(trending);
-
   return (
     <div className='flex w-full flex-col pb-12 px-12 items-center'>
       <BannerSlider/>

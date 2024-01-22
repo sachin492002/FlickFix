@@ -1,4 +1,3 @@
-'use client'
 
 import GenrePage from "@/components/Genre/GenrePage";
 

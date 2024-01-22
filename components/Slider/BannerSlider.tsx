@@ -9,6 +9,7 @@ import 'swiper/css/scrollbar';
 import Image from "next/image";
 import {FaArrowLeft, FaArrowRight, FaPlay} from "react-icons/fa";
 import Slider from "react-slick";
+import Link from "next/link";
 
 
 export default function BannerSlider(){
@@ -55,11 +56,11 @@ export default function BannerSlider(){
                                         <div className= 'flex movie-info flex-col gap-2 justify-start items-start bg-transparent rounded-lg'>
                                         <h1 className='text-md md:text-4xl'>{g.title}</h1>
                                         <p className='text-white-100 hidden md:block  line-clamp-3'>{g.overview}</p>
-                                        <button
+                                        <Link href={'/movies/movie/'+g.id}
                                             className='bg-primary flex gap-1 rounded-lg text-xs md:text-lg p-2 md:p-4 items-center'>
                                             <FaPlay/>
                                             Play Now
-                                        </button>
+                                        </Link>
                                     </div>
                                     </div>
                             </div>

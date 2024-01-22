@@ -60,22 +60,22 @@ export default function MoviePage({trending,latest}:Props){
                     className='font-manrope text-3xl'>Genres</h1>
                     <SliderButtons SlideRef={SlideRef}/>
                 </div>
-                <SliderComponent data={genres} reference={SlideRef} type={'genre'}/>
+                <SliderComponent data={genres} reference={SlideRef} type={'genre'} settings={settings}/>
             </div>
             <div className='trending flex gap-1 justify-between flex-wrap'>
                 <div className='w-full inline-flex justify-between items-center'><h1
                     className='font-manrope text-3xl'>Trending Movies</h1><SliderButtons SlideRef={SlideRef1}/></div>
-                <SliderComponent data={trending} reference={SlideRef1} type={'movie'}/>
+                <SliderComponent data={trending} reference={SlideRef1} type={'movie'} settings={settings}/>
             </div>
             <div className='latest flex gap-1 justify-between flex-wrap'>
                 <div className='w-full inline-flex justify-between items-center'><h1
                     className='font-manrope text-3xl'>Latest Releases</h1><SliderButtons SlideRef={SlideRef2}/></div>
-                <SliderComponent data={latest} reference={SlideRef2} type={'movie'}/>
+                <SliderComponent data={latest} reference={SlideRef2} type={'movie'} settings={settings}/>
             </div>
             <div className='latest flex gap-1 justify-between flex-wrap'>
                 <div className='w-full inline-flex justify-between items-center'><h1
                     className='font-manrope text-3xl'>Top Rated Movies</h1><SliderButtons SlideRef={SlideRef3}/></div>
-                <SliderComponent data={latest} reference={SlideRef3} type={'movie'}/>
+                <SliderComponent data={latest} reference={SlideRef3} type={'movie'} settings={settings}/>
             </div>
         </div>
     )
