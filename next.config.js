@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['photocdn.stream']
+        domains: ['photocdn.stream','image.tmdb.org']
     }
 }
 

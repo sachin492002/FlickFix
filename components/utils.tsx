@@ -1,88 +1,91 @@
 
-const settings = {
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    infinite: true,
-    dots: true,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true,
-            },
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            },
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            },
-        },
-    ],
-};
+
 const genres = [
     {
-        name: 'comedy',
-        imgsrc: '/homegrid/Comedy.png'
+        id: 28,
+        name: "Action",
+        imgsrc : '/Action.png',
     },
     {
-        name: 'drama',
-        imgsrc: '/homegrid/Comedy.png'
+        id: 12,
+        name: "Adventure",
+        imgsrc : "/Adventure.png"
     },
     {
-        name: 'crime',
-        imgsrc: '/homegrid/Action.png'
+        id: 16,
+        name: "Animation",
+        imgsrc : "/Action.png"
     },
     {
-        name: 'mystery',
-        imgsrc: '/homegrid/Adventure.png'
+        id: 35,
+        name: "Comedy",
+        imgsrc : "/Comedy.png"
     },
     {
-        name: 'adventure',
-        imgsrc: '/homegrid/Adventure.png'
+        id: 80,
+        name: "Crime",
+        imgsrc : "/Horror.png"
     },
     {
-        name: 'thriller',
-        imgsrc: '/homegrid/Action.png'
+        id: 99,
+        name: "Documentary",
+        imgsrc : "/FamilyDrama.png"
     },
     {
-        name: 'horror',
-        imgsrc: '/homegrid/FamilyDrama.png'
+        id: 18,
+        name: "Drama",
+        imgsrc : "/FamilyDrama.png"
     },
     {
-        name: 'romance',
-        imgsrc: '/homegrid/Comedy.png'
+        id: 10751,
+        name: "Family",
+        imgsrc : "/FamilyDrama.png"
     },
     {
-        name: 'fantasy',
-        imgsrc: '/homegrid/Action.png'
+        id: 14,
+        name: "Fantasy",
+        imgsrc : "/Adventure.png"
     },
     {
-        name: 'history',
-        imgsrc: '/homegrid/Adventure.png'
+        id: 36,
+        name: "History",
+        imgsrc : "/Adventure.png"
     },
     {
-        name: 'family',
-        imgsrc: '/homegrid/FamilyDrama.png'
+        id: 27,
+        name: "Horror",
+        imgsrc : "/Horror.png"
     },
     {
-        name: 'war',
-        imgsrc: '/homegrid/Action.png'
+        id: 10402,
+        name: "Music",
+        imgsrc : "/Comedy.png"
     },
     {
-        name: 'kids',
-        imgsrc: '/homegrid/Comedy.png'
-    }
+        id: 9648,
+        name: "Mystery",
+        imgsrc : "/FamilyDrama.png"
+    },
+    {
+        id: 10749,
+        name: "Romance",
+        imgsrc : "/Action.png"
+    },
+    {
+        id: 878,
+        name: "Science Fiction",
+        imgsrc : "/Adventure.png"
+    },
+    {
+        id: 53,
+        name: "Thriller",
+        imgsrc : "/Horror.png"
+    },
+    {
+        id: 10752,
+        name: "War",
+        imgsrc : "/Action.png"
+    },
 ];
 
-export {genres,settings}
+export {genres}

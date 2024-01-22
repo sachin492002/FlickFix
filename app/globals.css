@@ -20,18 +20,28 @@
 }
 html,body,:root {
     background: #141414;
-    height: 100%;
+
+    width: 100%;
     color:#fff;
     scroll-behavior: smooth;
-    position: relative;
 }
+/*.player-wrapper {*/
+/*    width: auto;*/
+/*height: auto;*/
+/*}*/
+/*.react-player {*/
+/*    padding-top: 56.25%;*/
+/*position: relative;*/
+/*}*/
 
+/*.react-player > div {*/
+/*    position: absolute;*/
+/*}*/
 .navbar{
     background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
 }
 .movie-info{
-    background: white;
-    background: linear-gradient(270deg, rgba(37,40,40,1) 9%, #141414 100%);
+    background: linear-gradient(180deg, rgba(37,40,40,0.1) 9%, rgba(61, 66, 66, 0.1) 100%);
 }
 .watchnow,.category-card{
     background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%);
@@ -71,9 +81,25 @@ html,body,:root {
     border-right: 0;
     border-top: 0;
     border-left: 0;
-
-
-
     border-image: linear-gradient(90deg, rgba(229, 0, 0, 0.00) 0%, #E50000 16.67%, rgba(229, 0, 0, 0.00) 100%) 1;
-
 }
+.slick-arrow {
+    display: none !important;
+}
+
+.homegrid{
+    background-image: url(../public/homegrid/homeg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slick-active .dotclass{
+    background: #E50000;
+}
+
+.slider-banner{
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+

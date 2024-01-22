@@ -31,7 +31,7 @@ export default  function Navbar(){
 
     return( 
         <div
-            className='flex navbar fixed top-0 w-[100%] z-[100] justify-between  items-center py-8 px-40'>
+            className='flex navbar fixed top-0 w-full z-30  justify-between  items-center py-8 px-40'>
             <div className='flex items-center'>
                 <img src={'/logo.svg'} alt='koi'/>
                 <h1 className='text-2xl font-lobster'>StreamGuru</h1>

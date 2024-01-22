@@ -91,3 +91,18 @@ export async function getMovie(id:string){
         throw new Error("Failed To get Data cause :"+error.message);
     }
 }
+
+export async function getTrendinMovies(){
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4OWIwODViMDk2ZmU3NjZhNmE3NTQwZDY2YjRjNWFkMSIsInN1YiI6IjY0YmY1MWViYmIwNzBkMDIzNGM3Y2NjMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UOTiIjIS4O-thmfcBgvSSCzjxbKvf6ZYeWpc6TYLbiw'
+        }
+    };
+
+    fetch('https://api.themoviedb.org/3/trending/movie/day?language=en-US', options)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
+}

@@ -1,13 +1,13 @@
 'use Client'
 import { createSlice } from '@reduxjs/toolkit';
-import {getTrending} from "@/lib/actions";
+
 
 
 const initialState = {
   trending :null,
-  latest : null,
-  movies: null,
-  status: 'idle',
+  now_playing:null,
+  popular : null,
+  top_rated : null,
 };
 
 const movieSlice = createSlice({
@@ -16,19 +16,19 @@ const movieSlice = createSlice({
   reducers: {
     addTrending : (state,action) =>{
       state.trending = action.payload || null;
-      state.status = 'success';
+
     },
-    addLatest : (state,action) =>{
-      state.latest = action.payload || null;
-      state.status = 'success';
+    addNowPlaying : (state,action) =>{
+      state.now_playing = action.payload || null;
+
     },
-    addMovies : (state,action) =>{
-      state.movies = action.payload || null;
-      state.status = 'success';
-    },
+    addTopRated :(state,action) =>{
+      state.top_rated = action.payload || null;
+    }
+
   },
 });
 
-export const { addTrending,addLatest,addMovies } = movieSlice.actions;
+export const { addTrending,addNowPlaying,addTopRated } = movieSlice.actions;
 
 export default movieSlice.reducer;

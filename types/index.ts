@@ -1,21 +1,24 @@
 export type Movie = {
-    _id?: string;
-    name: String,
-    gokuUrl: String,
-    thumbnail: string ,
-    rating: String ,
-    duration: String,
-    streamlinks: [],
-    description: String,
-    genres: [],
-    cast: [],
-    production: [],
-    country: [],
-    year: Number ,
-    type:String,
+    adult : boolean,
+    genre_path : string,
+    genre_ids : [],
+    id : string,
+    media_type : string,
+    original_language :string,
+    original_title:string,
+    overview:string,
+    popularity: number,
+    poster_path: string,
+    release_date: string,
+    title: string
+    video: boolean,
+    vote_average:number,
+    vote_count:number,
 }
 
 export type Genre = {
-    name :string,
+    id :number,
+    name : string,
     imgsrc : string,
 }
+
