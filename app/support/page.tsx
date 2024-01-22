@@ -38,9 +38,9 @@ const faqs = [
 export default function Support(){
 
     return(
-        <div className='mt-44 flex flex-col px-12 py-12 gap-10'>
-            <div className='inline-flex justify-between gap-10 w-full'>
-                <div className='flex flex-col w-2/4  gap-4'>
+        <div className='mt-0 md:mt-44 flex flex-col px-2 py-4  md:px-12 md:py-12 gap-10'>
+            <div className='flex flex-col md:flex-row justify-between gap-10 w-full'>
+                <div className='flex flex-col w-full md:w-2/4  gap-4'>
                     <h1 className='text-4xl'>Welcome To Our Support Page!</h1>
                      <p className='text-primary-grey-text'>We are here to help you with any problems you may be having with our product.</p>
                     <div className='flex flex-col overflow-clip gap-2 p-2 bg-primary-grey justify-center items-center rounded-lg'>
@@ -48,15 +48,15 @@ export default function Support(){
                     </div>
                 </div>
                 <form className='w-full flex flex-col p-8 bg-primary-black gap-10 border-2 border-primary-grey rounded-lg'>
-                    <div className='inline-flex justify-between w-full gap-2'>
-                        <div className='flex flex-col w-2/4 gap-2'>
+                    <div className='flex flex-col md:flex-row  justify-between w-full gap-2'>
+                        <div className='flex flex-col w-full md:w-2/4 gap-2'>
                             <label className='text-lg font-manrope'>
                                 First Name
                             </label>
                             <input className='rounded-lg  p-4  text-white bg-primary-grey'
                                    placeholder={'Enter Your First Name'}/>
                         </div>
-                        <div className='flex flex-col w-2/4 gap-2'>
+                        <div className='flex flex-col w-full md:w-2/4 gap-2'>
                             <label className='text-lg font-manrope'>
                                 Last Name
                             </label>
@@ -64,15 +64,15 @@ export default function Support(){
                                    placeholder={'Enter Your Last Name'}/>
                         </div>
                     </div>
-                    <div className='inline-flex justify-between w-full gap-2'>
-                        <div className='flex flex-col w-2/4 gap-2'>
+                    <div className='flex flex-col md:flex-row justify-between w-full gap-2'>
+                        <div className='flex flex-col w-full md:w-2/4 gap-2'>
                             <label className='text-lg font-manrope'>
                                 Email
                             </label>
                             <input className='rounded-lg  p-4  text-white bg-primary-grey'
                                    placeholder={'Enter Your Email'}/>
                         </div>
-                        <div className='flex flex-col w-2/4 gap-2'>
+                        <div className='flex flex-col w-full md:w-2/4 gap-2'>
                             <label className='text-lg font-manrope'>
                                 Phone Number
                             </label>
@@ -87,12 +87,12 @@ export default function Support(){
                 </form>
             </div>
             <div className='flex flex-col gap-4'>
-                <div className='inline-flex justify-between'>
+                <div className='flex flex-col md:flex-row gap-2 justify-between'>
                     <div className='flex flex-col'>
                          <h1 className='text-2xl font-manrope'>Frequently Asked Questions</h1>
                          <p className='text-primary-grey-text'>Got questions? We ve got answers! Check out our FAQ section to find answers to the most common questions about StreamJet.</p>
                     </div>
-                    <button className='bg-primary w-40 text-center text-white flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
+                    <button className='bg-primary w-40 text-center text-white flex gap-1 rounded-lg p-2 md:p-4 items-center'>
                         Ask a question
                     </button>
                 </div>

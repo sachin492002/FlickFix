@@ -33,7 +33,7 @@ export default function BannerSlider(){
         SlideRef.current.slickPrev();
     };
     return(
-        <div className='pt-20 mb-20 w-full md:p-0'>
+        <div className=' pt-2 md:pt-20 mb-20 w-full md:p-0'>
             <div
                 className="hidden md:absolute top-1/3 z-10  inline-flex  gap-1 items-center text-2xl p-3 rounded-lg ">
                 <button className='p-4 bg-primary-black  rounded-lg' onClick={() => handlePrev()}><FaArrowLeft/>

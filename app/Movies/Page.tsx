@@ -9,7 +9,7 @@ export default  function Page() {
   const {trending,now_playing} = useAppSelector((state:any) => state.movie ) || [];
 
   return (
-    <div className='flex w-full flex-col pb-12 px-12 items-center'>
+    <div className='flex w-full flex-col px-2 py-4 md:pb-12 md:px-12 items-center'>
       <BannerSlider/>
        <MoviePage trending={trending} latest={now_playing}/>
     </div>
