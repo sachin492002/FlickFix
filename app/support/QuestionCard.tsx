@@ -2,7 +2,7 @@
 import {useState} from "react";
 import {CiCircleMinus, CiCirclePlus} from "react-icons/ci";
 
-// IDEYA1901
+
 interface Props{
     faq: {
         question: string,

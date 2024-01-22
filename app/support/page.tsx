@@ -38,7 +38,7 @@ const faqs = [
 export default function Support(){
 
     return(
-        <div className='mt-0 md:mt-44 flex flex-col px-2 py-4  md:px-12 md:py-12 gap-10'>
+        <div className='mt-0  flex flex-col px-2 py-4  md:px-12 md:py-12 gap-10'>
             <div className='flex flex-col md:flex-row justify-between gap-10 w-full'>
                 <div className='flex flex-col w-full md:w-2/4  gap-4'>
                     <h1 className='text-4xl'>Welcome To Our Support Page!</h1>
