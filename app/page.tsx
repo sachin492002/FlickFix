@@ -2,7 +2,6 @@
 import HomePage from "@/components/Homepage/HomePage";
 
 import {useGetLatestMoviesQuery, useGetTopRatedMoviesQuery, useGetTrendingMoviesQuery} from "@/lib/store/service";
-import {useEffect} from "react";
 import {addNowPlaying, addTopRated, addTrending} from "@/lib/store/movieSlice";
 import {useAppDispatch} from "@/lib/hooks";
 

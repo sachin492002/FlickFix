@@ -11,9 +11,9 @@ export default function Footer(){
                     <Link href='/#devices' className='text-primary-grey-text'>Devices</Link>
                 </div>
                 <div className='flex flex-col  col-span-2 md:col-span-1 gap-2'>
-                    <Link href='/movies' className='font-bitter font-bold text-xl'>Movies</Link>
-                    <Link href='/movies/#trending' className='text-primary-grey-text'>Trending</Link>
-                    <Link href='/movies/#latest' className='text-primary-grey-text'>Latest</Link>
+                    <Link href='/Movies' className='font-bitter font-bold text-xl'>Movies</Link>
+                    <Link href='/Movies/#trending' className='text-primary-grey-text'>Trending</Link>
+                    <Link href='/Movies/#latest' className='text-primary-grey-text'>Latest</Link>
                 </div>
                 <div className='flex flex-col col-span-2 md:col-span-1 gap-2'>
                     <Link href='/support' className='font-bitter font-bold text-xl'>Support</Link>

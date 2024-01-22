@@ -59,7 +59,7 @@ export default function Devices() {
                 </div>
 
 
-                <Link href={'/movies'}>
+                <Link href={'/Movies'}>
                     <button className='bg-primary flex gap-1 rounded-lg px-4 py-2 md:px-4 md:py-3 items-center'>
                         <FaPlay/>
                         <span>Watch Now</span>

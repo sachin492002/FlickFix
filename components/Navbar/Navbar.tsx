@@ -16,7 +16,7 @@ const navItems = [
         icon:<HiHome/>
     },
     {
-        path:"/movies",
+        path:"/Movies",
         name:"Movies",
         icon : <MdMovie/>
     },
