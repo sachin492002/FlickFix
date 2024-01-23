@@ -1,7 +1,7 @@
+'use client'
 import React, {useRef, useState} from "react";
 import {useAppSelector} from "@/lib/hooks";
-import {A11y, Autoplay, Navigation, Pagination, Scrollbar} from "swiper/modules";
-import {Swiper, SwiperSlide} from "swiper/react";
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -33,7 +33,7 @@ export default function BannerSlider(){
         SlideRef.current.slickPrev();
     };
     return(
-        <div className='-mt-32 mb-20 w-full md:p-0'>
+        <div className='mt-0 md:-mt-36 mb-20 w-full md:p-0'>
             <div
                 className="hidden md:absolute top-1/3 z-10  inline-flex  gap-1 items-center text-2xl p-3 rounded-lg ">
                 <button className='p-4 bg-primary-black  rounded-lg' onClick={() => handlePrev()}><FaArrowLeft/>

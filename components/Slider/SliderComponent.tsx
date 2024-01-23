@@ -1,4 +1,4 @@
-'use client'
+
 import Slider from 'react-slick';
 
 import GenreCard from "@/components/GenreCard";

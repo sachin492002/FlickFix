@@ -1,5 +1,5 @@
 
-
+'use client'
 import SliderComponent from "@/components/Slider/SliderComponent";
 import {genres} from "@/components/utils";
 import {useRef} from "react";

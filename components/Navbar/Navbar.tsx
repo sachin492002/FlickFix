@@ -68,7 +68,7 @@ export default  function Navbar(){
                         navItems.map(nav=>{
                             return(
                                 <Link key={nav.name} href={nav.path}>
-                                    <button className={router == nav.path ? "text-lg px-4 py-2 col-span-1 rounded-lg bg-primary md:bg-primary-grey" : "text-lg p-3 rounded-lg hover:bg-primary-grey duration-300 ease-out"} >{nav.icon}</button>
+                                    <button className={router == nav.path ? "text-lg p-6 transition  -translate-y-1/3  duration-300 z-10 delay-75 ease-in   col-span-1 rounded-full bg-primary md:bg-primary-grey " : "text-lg p-3 rounded-lg hover:bg-primary-grey duration-300 ease-out"} >{nav.icon}</button>
                                 </Link>
                             )
                         })

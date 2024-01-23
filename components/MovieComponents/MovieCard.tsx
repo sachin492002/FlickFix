@@ -5,12 +5,11 @@ import Link from "next/link";
 import Image from 'next/image'
 interface Props{
     movie : Movie,
-    innerRef?: (node ?: Element | null | undefined) => void
 }
 
-export default function MovieCard({movie,innerRef}:Props){
+export default function MovieCard({movie}:Props){
     return(
-           <div className='md:mr-1 mr-2' ref={innerRef}>
+           <div className='md:mr-1 mr-2'>
         <Link href={'/watch/movie/'+movie.id} className='category-card border-2 flex flex-col gap-2 border-primary-grey rounded-lg p-4'>
             <Image alt='klpd' src={process.env.NEXT_PUBLIC_PIC_PATH +'w500' + movie.poster_path} width={500} height={500} className='rounded-lg object-cover'/>
             <div className='inline-flex justify-between text-md  items-center '>

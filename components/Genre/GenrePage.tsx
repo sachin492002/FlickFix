@@ -15,8 +15,6 @@ export default function GenrePage({genre}:Props){
     const [page, setPage] = useState(1);
     const fetchData = async () => {
         setIsLoading(true);
-
-
         try {
             const response = await fetch(`${process.env.NEXT_PUBLIC_API_MAIN}discover/movie?language=en-US&page=${page}&with_genres=${genre}`,{
                 method : 'GET',
@@ -46,7 +44,7 @@ export default function GenrePage({genre}:Props){
                 <h1 className='absolute -top-5 z-10 bg-primary text-4xl font-bitter capitalize px-4 py-2 rounded-lg'>{genrename?.name}</h1>
                     <InfiniteScroll
                         dataLength={movies.length}
-                        className='w-full grid grid-cols-4 gap-10'
+                        className='w-full grid grid-cols-2 md:grid-cols-4 gap-10'
                         next={fetchData}
                         hasMore={true}
                         loader={<p>Loading...</p>}
