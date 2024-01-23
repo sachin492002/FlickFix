@@ -39,8 +39,8 @@ export default function GenrePage({genre}:Props){
     }, []);
     return(
 
-        <div className='mt-44 px-12  flex flex-col '>
-            <div className='relative border-2 border-primary-grey px-12 py-12 rounded-lg'>
+        <div className='mt-0 md:mt-44 px-2 py-10 md:px-12  flex flex-col '>
+            <div className='relative border-2 border-primary-grey px-1 py-2 md:px-12 md:py-12 rounded-lg'>
                 <h1 className='absolute -top-5 z-10 bg-primary text-4xl font-bitter capitalize px-4 py-2 rounded-lg'>{genrename?.name}</h1>
                     <InfiniteScroll
                         dataLength={movies.length}

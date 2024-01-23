@@ -3,6 +3,9 @@ const nextConfig = {
     images: {
         domains: ['photocdn.stream','image.tmdb.org']
     }
-}
 
-module.exports = nextConfig
+}
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+    enabled: process.env.ANALYZE === 'true',
+})
+module.exports = withBundleAnalyzer(nextConfig)

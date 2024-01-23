@@ -1,4 +1,3 @@
-
 import Slider from 'react-slick';
 
 import GenreCard from "@/components/GenreCard";
@@ -6,7 +5,6 @@ import GenreCard from "@/components/GenreCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import MovieCard from "@/components/MovieComponents/MovieCard";
-import {useRef} from "react";
 import CastCard from "@/components/MovieComponents/CastCard";
 
 interface Props{
@@ -21,7 +19,7 @@ export default function SliderComponent({data,type,reference,settings}:Props){
     return (<>
 
     <Slider
-        className='inline-flex w-full'
+        className='inline-flex w-full h-96'
         ref = {reference} {...settings}
     >
         {
@@ -34,7 +32,6 @@ export default function SliderComponent({data,type,reference,settings}:Props){
             })
         }
     </Slider>
-
         </>
 )
 }

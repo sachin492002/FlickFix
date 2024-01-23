@@ -1,13 +1,8 @@
 'use client'
-
-
-import ReactPlayer from "react-player";
 import {useGetMovieDetailsQuery, useGetMovieVideoQuery} from "@/lib/store/service";
-import YouTube from "react-youtube";
 import SliderComponent from "@/components/Slider/SliderComponent";
 import {useRef} from "react";
 import StarRatings from 'react-star-ratings'
-import SliderButtons from "@/components/Slider/SliderButtons";
 import {FaArrowLeft, FaArrowRight, FaStar, FaWindows} from "react-icons/fa";
 import {CiCalendar} from "react-icons/ci";
 import {IoLanguageOutline} from "react-icons/io5";
@@ -63,14 +58,14 @@ export default function Page({ params }: { params: { slug: string } }){
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1,
                 }
             }
         ]
     };
     return (
         <>
-            <div className=' aspect-video '>
+            <div className='aspect-video '>
                 <iframe
                     className='w-full h-full rounded-lg'
                     src={`https://www.youtube.com/embed/${trailer.key}?controls=0&showinfo=0`}
@@ -155,7 +150,7 @@ export default function Page({ params }: { params: { slug: string } }){
                                 directors.map((g: any) => {
                                     return (
                                         <div className='flex p-2 items-center gap-2 flex-row'>
-                                            <Image className={'rounded-lg object-cover'} src={process.env.NEXT_PUBLIC_PIC_PATH+'w500'+g.profile_path} width={56} height={60} alt={'no'}/>
+                                            <Image placeholder='empty'  className={'rounded-lg object-cover'} src={g.profile_path ? process.env.NEXT_PUBLIC_PIC_PATH+'w500'+g.profile_path : '/homegrid/user.png'} width={56} height={60} alt={'nope'} />
                                             <div className={'flex flex-col gap-2'}>
                                                 <h1>{g.name}</h1>
                                             </div>
@@ -172,7 +167,7 @@ export default function Page({ params }: { params: { slug: string } }){
                             Sound
                         </div>
                         <div className='inline-flex items-center p-2 flex-wrap gap-2'>
-                            <Image className={'rounded-lg object-cover'} src={process.env.NEXT_PUBLIC_PIC_PATH+'w500'+sound.profile_path} width={56} height={60}  alt={'no'}/>
+                            <Image placeholder='empty'  className={'rounded-lg object-cover'} src={sound.profile_path ? process.env.NEXT_PUBLIC_PIC_PATH+'w500'+sound.profile_path : '/homegrid/user.png'} width={56} height={60} alt={'nope'} />
                         <h1>{sound.name}</h1>
                         </div>
 

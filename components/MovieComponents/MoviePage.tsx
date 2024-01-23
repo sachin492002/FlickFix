@@ -1,17 +1,16 @@
 'use client'
 import SliderComponent from "@/components/Slider/SliderComponent";
 import {genres} from "@/components/utils";
-import {Movie} from "@/types";
 import {useRef} from "react";
 import SliderButtons from "@/components/Slider/SliderButtons";
-import {use} from "ast-types";
 import {useAppDispatch} from "@/lib/hooks";
 import {useGetLatestMoviesQuery, useGetTopRatedMoviesQuery, useGetTrendingMoviesQuery} from "@/lib/store/service";
 import {addNowPlaying, addTopRated, addTrending} from "@/lib/store/movieSlice";
 import MovieCardSkeleton from "@/components/MovieComponents/MovieCardSkeleton";
 import BannerSlider from "@/components/Slider/BannerSlider";
-
-
+import Link from "next/link";
+import Image from "next/image";
+import {GoStar} from "react-icons/go";
 
 
 export default function MoviePage(){
@@ -62,7 +61,6 @@ export default function MoviePage(){
         ]
     };
 
-    if(isFetching1) return <MovieCardSkeleton number={4}/>
     return(
         <div className={'flex w-full flex-col px-2 py-4 md:pb-12 md:px-12 items-center'}>
             <BannerSlider/>
@@ -74,7 +72,7 @@ export default function MoviePage(){
                     className='font-manrope text-3xl'>Genres</h1>
                     <SliderButtons SlideRef={SlideRef}/>
                 </div>
-                <SliderComponent data={genres} reference={SlideRef} type={'genre'} settings={settings}/>
+                <SliderComponent  data={genres} reference={SlideRef} type={'genre'} settings={settings}/>
             </div>
             <div className='trending flex gap-1 justify-between flex-wrap'>
                 <div className='w-full inline-flex justify-between items-center'><h1

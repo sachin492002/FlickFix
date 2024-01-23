@@ -1,10 +1,9 @@
 'use client'
 import {CiSearch} from "react-icons/ci";
 import {IoIosNotificationsOutline} from "react-icons/io";
-import WatchNow from "@/components/Homepage/WatchNow";
 import Link from "next/link";
 
-import {usePathname, useRouter} from "next/navigation";
+import {usePathname} from "next/navigation";
 import {HiHome} from "react-icons/hi";
 import {MdDeveloperMode, MdMovie, MdOutlineSupportAgent} from "react-icons/md";
 
@@ -26,8 +25,8 @@ const navItems = [
         icon : <MdOutlineSupportAgent/>
     },
     {
-        path:'/about',
-        name:"About Us",
+        path:'/subscription',
+        name:"Subscription",
         icon : <MdDeveloperMode/>
     }
 ]
@@ -38,10 +37,10 @@ export default  function Navbar(){
     return(
         <>
         <div
-            className='hidden md:flex sticky top-0 w-full z-30 navbar justify-between  items-center py-8 px-40'>
+            className='hidden md:flex sticky top-0 w-full z-30 navbar justify-between  items-center py-4 px-40'>
             <div className='flex items-center'>
                 <img src={'/logo.svg'} alt='koi'/>
-                <h1 className='text-2xl font-lobster'>StreamGuru</h1>
+                <h1 className='text-2xl font-lobster'>StreamJET</h1>
             </div>
 
             <div

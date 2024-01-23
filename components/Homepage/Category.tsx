@@ -1,4 +1,3 @@
-
 'use client'
 import SliderComponent from "@/components/Slider/SliderComponent";
 import {genres} from "@/components/utils";
@@ -68,8 +67,8 @@ export default function Category(){
     return(
         <div className='flex flex-col px-6 md:px-12 py-20 gap-16 overflow-clip' id='category'>
             <div className='flex flex-row justify-between'>
-                <div className='flex flex-col'><h1 className='font-manrope text-3xl'>Explore our wide variety of
-                    categories</h1><p className='text-primary-grey-text text-start'>Whether you are
+                <div className='flex flex-col'><span className='font-manrope text-3xl'>Explore our wide variety of
+                    categories</span><p className='text-primary-grey-text text-start'>Whether you are
                     looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn
                     something new</p></div>
                 <div
