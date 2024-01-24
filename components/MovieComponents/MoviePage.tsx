@@ -28,18 +28,19 @@ export default function MoviePage(){
     const SlideRef3:any = useRef();
     var settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
+        swipeToSlide: true,
         initialSlide: 0,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
-                    infinite: true,
+                    infinite: false,
                     dots: true
                 }
             },
@@ -48,18 +49,22 @@ export default function MoviePage(){
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    initialSlide: 2
+                    initialSlide: 1,
+                    dots : false,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 1,
+                    dots:false,
                 }
             }
         ]
     };
+
 
     return(
         <div className={'flex w-full flex-col px-2 py-4 md:pb-12 md:px-12 items-center'}>

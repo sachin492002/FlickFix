@@ -9,8 +9,8 @@ interface Props{
 
 export default function MovieCard({movie}:Props){
     return(
-           <div className='md:mr-1 mr-2'>
-        <Link href={'/watch/movie/'+movie.id} className='category-card border-2 flex flex-col gap-2 border-primary-grey rounded-lg p-4'>
+           <div className='mr-2 md:mr-10'>
+        <Link href={'/watch/movie/'+movie.id} className='category-card p-1 md:p-4 border-2 flex flex-col gap-2 border-primary-grey rounded-lg'>
             <Image placeholder='empty' loading={'lazy'}  alt='klpd' src={process.env.NEXT_PUBLIC_PIC_PATH +'w500' + movie.poster_path} width={260} height={400} className='rounded-lg object-cover'/>
             <div className='inline-flex justify-between text-md  items-center '>
                 <h1 className='capitalize line-clamp-1 w-1/2'>{movie.original_title}</h1>

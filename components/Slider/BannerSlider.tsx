@@ -32,6 +32,7 @@ export default function BannerSlider(){
     const handlePrev = () => {
         SlideRef.current.slickPrev();
     };
+
     return(
         <div className='mt-0 md:-mt-36 mb-20 h-56 md:h-[100vh] w-full md:p-0'>
             <div
