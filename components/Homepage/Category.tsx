@@ -31,7 +31,7 @@ export default function Category(){
             </div>
         ),
         afterChange: (current :number) => {
-                   setSlideIndex((100/genres.length * (4+current) )+ 40);
+                   setSlideIndex((100/genres.length * (4+current) ));
         },
         dots: true,
         infinite: false,

@@ -17,7 +17,7 @@ export default function Page(){
                             ₹150
                             <span className='text-xs text-primary-grey-text'>/month</span>
                         </span>
-                    <button className='hover:bg-primary delay-75 hover:scale-125 duration-200 ease-outbg-primary w-40 text-center  flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
+                    <button className='bg-primary delay-75 hover:scale-125 duration-200 ease-outbg-primary w-40 text-center  flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
                         Choose plan
                     </button>
                 </div>
@@ -32,7 +32,7 @@ export default function Page(){
                             ₹450
                             <span className='text-xs text-primary-grey-text'>/month</span>
                         </span>
-                    <button className='hover:bg-primary delay-75 hover:scale-125 duration-200 ease-outbg-primary w-40 text-center  flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
+                    <button className='bg-primary delay-75 hover:scale-125 duration-200 ease-outbg-primary w-40 text-center  flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
                         Choose plan
                     </button>
                 </div>
@@ -46,7 +46,7 @@ export default function Page(){
                             ₹1050
                             <span className='text-xs text-primary-grey-text'>/month</span>
                         </span>
-                    <button className='hover:bg-primary delay-75 hover:scale-125 duration-200 ease-outbg-primary w-40 text-center  flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
+                    <button className='bg-primary delay-75 hover:scale-125 duration-200 ease-outbg-primary w-40 text-center  flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
                         Choose plan
                     </button>
                 </div>
