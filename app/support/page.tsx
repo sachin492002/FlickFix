@@ -81,7 +81,7 @@ export default function Support(){
                         </div>
                     </div>
                     <textarea className='rounded-lg  p-4 text-white bg-primary-grey' placeholder={'Enter Your Message'}></textarea>
-                    <button className='bg-primary w-40 text-center  flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
+                    <button className='hover:bg-primary delay-75 hover:scale-125 duration-200 ease-outbg-primary w-40 text-center  flex gap-1 rounded-lg px-4 py-3 items-center p-4'>
                         Send Message
                     </button>
                 </form>
@@ -89,10 +89,10 @@ export default function Support(){
             <div className='flex flex-col gap-4'>
                 <div className='flex flex-col md:flex-row gap-2 justify-between'>
                     <div className='flex flex-col'>
-                         <h1 className='text-2xl font-manrope'>Frequently Asked Questions</h1>
+                         <h3 className='text-2xl font-manrope'>Frequently Asked Questions</h3>
                          <p className='text-primary-grey-text'>Got questions? We ve got answers! Check out our FAQ section to find answers to the most common questions about StreamJet.</p>
                     </div>
-                    <button className='bg-primary w-40 text-center text-white flex gap-1 rounded-lg p-2 md:p-4 items-center'>
+                    <button className='hover:bg-primary delay-75 hover:scale-125 duration-200 ease-outbg-primary w-40 text-center text-white flex gap-1 rounded-lg p-2 md:p-4 items-center'>
                         Ask a question
                     </button>
                 </div>

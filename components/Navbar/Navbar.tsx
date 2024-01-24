@@ -2,15 +2,12 @@
 import {CiSearch} from "react-icons/ci";
 import {IoIosNotificationsOutline} from "react-icons/io";
 import Link from "next/link";
-
 import {usePathname, useRouter} from "next/navigation";
-
 import {HiHome} from "react-icons/hi";
 import {MdDeveloperMode, MdMovie, MdOutlineSupportAgent} from "react-icons/md";
 import {ChangeEvent, useState} from "react";
 import {GiCrossedSabres} from "react-icons/gi";
 import {AiOutlineSearch} from "react-icons/ai";
-
 
 const navItems = [
     {
@@ -57,7 +54,7 @@ export default function Navbar() {
                 <div className='inline-flex  justify-between items-center w-full'>
                     <div className={!isSearchBarOpen ? 'flex items-center' : 'hidden md:flex items-center'}>
                         <img src={'/logo.svg'} alt='koi'/>
-                        <h1 className='text-2xl font-lobster'>StreamJET</h1>
+                        <span className='text-2xl font-lobster'>StreamJET</span>
                     </div>
 
                     <div
@@ -67,14 +64,14 @@ export default function Navbar() {
                             navItems.map(nav => {
                                 return (
                                     <Link key={nav.name} href={nav.path}>
-                                    <span
-                                        className={router == nav.path ? "text-lg p-3 rounded-lg bg-primary-grey" : "text-lg p-3 rounded-lg hover:bg-primary-grey duration-300 ease-out"}>{nav.name}</span>
+                                    <h5
+                                        className={router == nav.path ? "text-lg p-3 rounded-lg bg-primary-grey" : "text-lg p-3 rounded-lg hover:bg-primary-grey duration-300 ease-out"}>{nav.name}</h5>
                                     </Link>
                                 )
                             })
                         }
                     </div>
-                    <div className='order-last inline-flex text-3xl font-bold'>
+                    <div className='order-last inline-flex text-3xl gap-10 font-bold'>
                         {!isSearchBarOpen && <CiSearch onClick={() => setisSearchBarOpen(true)}/>}
                         {isSearchBarOpen && <GiCrossedSabres onClick={() => setisSearchBarOpen(false)}/>}
                         <IoIosNotificationsOutline/>

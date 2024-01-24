@@ -24,7 +24,7 @@ export default function  QuestionCard({faq,index}:Props){
                     {index+1}
                 </div>
                 <div className='flex flex-col gap-2'>
-                    <h1 className='text-2xl font-manrope '>{faq.question}</h1>
+                    <h3 className='text-2xl font-manrope '>{faq.question}</h3>
                     <p className={(open == false) ? 'text-primary-grey-text hidden' : 'text-primary-grey-text '}>{faq.ans}</p>
                 </div>
 

@@ -1,5 +1,6 @@
 import {FaGithub, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 import Link from "next/link";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Footer(){
     return(
@@ -21,20 +22,20 @@ export default function Footer(){
                     <Link href='/support/#about' className='text-primary-grey-text'>About Us</Link>
                 </div>
                 <div className='col-span-2 md:col-span-1 gap-4'>
-                    <h1 className='font-bitter font-bold text-xl'>Connect With Us</h1>
+                    <h3 className='font-bitter font-bold text-xl'>Connect With Us</h3>
                     <div className='inline-flex gap-4'>
                         <Link href='https://instagram.com/xo_sachin1'>
-                    <button className='bg-primary-grey text-xl p-2 rounded-lg'>
+                    <button className='bg-primary-grey hover:bg-primary delay-75 hover:scale-125 duration-200 ease-out text-xl p-2 rounded-lg'>
                         <FaInstagram/>
                     </button>
                         </Link>
                         <Link href='https://github.com/sachin492002'>
-                    <button className='bg-primary-grey text-xl p-2 rounded-lg'>
+                    <button className='bg-primary-grey hover:bg-primary delay-75 hover:scale-125 duration-200 ease-out text-xl p-2 rounded-lg'>
                         <FaGithub/>
                     </button>
                         </Link>
                         <Link href='https://linkedin.com/in/sachin-meena-9188ab200'>
-                    <button className=' bg-primary-grey text-xl p-2 rounded-lg'>
+                    <button className=' bg-primary-grey hover:bg-primary delay-75 hover:scale-125 duration-200 ease-out text-xl p-2 rounded-lg'>
                         <FaLinkedinIn/>
                     </button>
                         </Link>
@@ -42,7 +43,7 @@ export default function Footer(){
                 </div>
             </div>
             <div className='inline-flex'>
-                <h1 className='text-primary-grey-text'>@2023 sachin, All Rights Reserved</h1>
+                <h3 className='text-primary-grey-text'>@2023 sachin, All Rights Reserved</h3>
             </div>
         </div>
     )

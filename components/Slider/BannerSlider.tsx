@@ -55,7 +55,7 @@ export default function BannerSlider(){
                                 <Image placeholder='empty'   src={process.env.NEXT_PUBLIC_PIC_PATH +'original' + g.backdrop_path} alt={g.name} width={1920} height={200} className='object-cover'/>
                                     <div className='absolute top-1/2 z-30 w-[50vw]'>
                                         <div className= 'flex movie-info flex-col gap-2 justify-start items-start bg-transparent rounded-lg'>
-                                        <h1 className='text-md md:text-4xl'>{g.title}</h1>
+                                        <h3 className='text-md md:text-4xl'>{g.title}</h3>
                                         <p className='text-white-100 hidden md:block  line-clamp-3'>{g.overview}</p>
                                         <Link href={'/watch/movie/'+g.id}
                                             className='bg-primary flex gap-1 rounded-lg text-xs md:text-lg p-2 md:p-4 items-center'>

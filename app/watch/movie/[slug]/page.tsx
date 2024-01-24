@@ -22,8 +22,8 @@ export default function Page({ params }: { params: { slug: string } }){
     const handlePrev = () => {
         Slidref.current.slickPrev();
     };
-    if(isFetching) return <h1>Loading</h1>;
-    if(Fetch1) return <h1>Loading</h1>;
+    if(isFetching) return <h3>Loading</h3>;
+    if(Fetch1) return <h3>Loading</h3>;
     const trailer = videos.results.find((el:any)=> el.type == 'Trailer');
     const directors = movie.credits.crew.filter((el:any)=> el.job == 'Director');
     const sound = movie.credits.crew.find((x:any)=> x.department == 'Sound');
@@ -68,7 +68,7 @@ export default function Page({ params }: { params: { slug: string } }){
             <div className='aspect-video '>
                 <iframe
                     className='w-full h-full rounded-lg'
-                    src={`https://www.youtube.com/embed/${trailer.key}?controls=0&showinfo=0`}
+                    src={`https://www.youtube.com/embed/${trailer.key}?showinfo=0`}
                     width="100%"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -78,8 +78,8 @@ export default function Page({ params }: { params: { slug: string } }){
             <div className='flex flex-col md:flex md:flex-row w-full px-2 py-4 md:px-10 md:py-10 gap-5'>
                 <div className='w-full md:w-2/3 flex gap-10  flex-col'>
                     <div className='flex flex-col text-start bg-primary-grey rounded-lg p-10'>
-                        <h1 className='text-primary-grey-text'>Description</h1>
-                        <span className='text-white text-sm'>{movie.overview}</span>
+                        <h3 className='text-primary-grey-text'>Description</h3>
+                        <h1 className='text-white text-sm'>{movie.overview}</h1>
                     </div>
 
                     <div className='flex items-end flex-col text-start bg-primary-grey rounded-lg p-2 md:p-10'>
@@ -99,14 +99,14 @@ export default function Page({ params }: { params: { slug: string } }){
                             <CiCalendar className='text-2xl'/>
                             Released date
                         </div>
-                        <h1>{movie.release_date}</h1>
+                        <h3>{movie.release_date}</h3>
                     </div>
                     <div className='flex flex-col gap-2'>
                         <div className='inline-flex gap-2 text-primary-grey-text items-center'>
                             <IoLanguageOutline className='text-2xl'/>
                             Language
                         </div>
-                        <h1>{movie.spoken_languages[0]?.name}</h1>
+                        <h3>{movie.spoken_languages[0]?.name}</h3>
                     </div>
                     <div className='flex flex-col gap-2'>
                         <div className='inline-flex gap-2 text-primary-grey-text items-center'>
@@ -121,7 +121,7 @@ export default function Page({ params }: { params: { slug: string } }){
                                 starRatedColor="red"
                                 numberOfStars={5}
                             />
-                            <h1>{(movie.vote_average / 2).toFixed(1)}/5</h1>
+                            <h3>{(movie.vote_average / 2).toFixed(1)}/5</h3>
                         </div>
                     </div>
                     <div className='flex flex-col gap-2'>
@@ -152,7 +152,7 @@ export default function Page({ params }: { params: { slug: string } }){
                                         <div className='flex p-2 items-center gap-2 flex-row'>
                                             <Image placeholder='empty'  className={'rounded-lg object-cover'} src={g.profile_path ? process.env.NEXT_PUBLIC_PIC_PATH+'w500'+g.profile_path : '/homegrid/user.png'} width={56} height={60} alt={'nope'} />
                                             <div className={'flex flex-col gap-2'}>
-                                                <h1>{g.name}</h1>
+                                                <h3>{g.name}</h3>
                                             </div>
                                         </div>
                                     )
@@ -168,7 +168,7 @@ export default function Page({ params }: { params: { slug: string } }){
                         </div>
                         <div className='inline-flex items-center p-2 flex-wrap gap-2'>
                             <Image placeholder='empty'  className={'rounded-lg object-cover'} src={sound.profile_path ? process.env.NEXT_PUBLIC_PIC_PATH+'w500'+sound.profile_path : '/homegrid/user.png'} width={56} height={60} alt={'nope'} />
-                        <h1>{sound.name}</h1>
+                        <h3>{sound.name}</h3>
                         </div>
 
                     </div>

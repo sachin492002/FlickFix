@@ -88,7 +88,7 @@ html,body,:root {
 }
 
 .homegrid{
-    background-image: url(../public/homegrid/homeg.png);
+    background-image: url(../public/homegrid/homeg.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }

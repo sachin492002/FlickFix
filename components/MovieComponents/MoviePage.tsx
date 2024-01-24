@@ -6,11 +6,7 @@ import SliderButtons from "@/components/Slider/SliderButtons";
 import {useAppDispatch} from "@/lib/hooks";
 import {useGetLatestMoviesQuery, useGetTopRatedMoviesQuery, useGetTrendingMoviesQuery} from "@/lib/store/service";
 import {addNowPlaying, addTopRated, addTrending} from "@/lib/store/movieSlice";
-import MovieCardSkeleton from "@/components/MovieComponents/MovieCardSkeleton";
 import BannerSlider from "@/components/Slider/BannerSlider";
-import Link from "next/link";
-import Image from "next/image";
-import {GoStar} from "react-icons/go";
 
 
 export default function MoviePage(){
@@ -73,25 +69,25 @@ export default function MoviePage(){
              id='category'>
             <h1 className='absolute -top-5 z-10 rounded-lg bg-primary px-4 py-2'>Movies</h1>
             <div className='flex gap-1 justify-between flex-wrap'>
-                <div className='w-full inline-flex justify-between items-center'><h1
-                    className='font-manrope text-3xl'>Genres</h1>
+                <div className='w-full inline-flex justify-between items-center'><h3
+                    className='font-manrope text-3xl'>Genres</h3>
                     <SliderButtons SlideRef={SlideRef}/>
                 </div>
                 <SliderComponent  data={genres} reference={SlideRef} type={'genre'} settings={settings}/>
             </div>
             <div className='trending flex gap-1 justify-between flex-wrap'>
-                <div className='w-full inline-flex justify-between items-center'><h1
-                    className='font-manrope text-3xl'>Trending Movies</h1><SliderButtons SlideRef={SlideRef1}/></div>
+                <div className='w-full inline-flex justify-between items-center'><h3
+                    className='font-manrope text-3xl'>Trending Movies</h3><SliderButtons SlideRef={SlideRef1}/></div>
                 <SliderComponent data={datat?.results} reference={SlideRef1} type={'movie'} settings={settings}/>
             </div>
             <div className='latest flex gap-1 justify-between flex-wrap'>
-                <div className='w-full inline-flex justify-between items-center'><h1
-                    className='font-manrope text-3xl'>Latest Releases</h1><SliderButtons SlideRef={SlideRef2}/></div>
+                <div className='w-full inline-flex justify-between items-center'><h3
+                    className='font-manrope text-3xl'>Latest Releases</h3><SliderButtons SlideRef={SlideRef2}/></div>
                 <SliderComponent data={data1?.results} reference={SlideRef2} type={'movie'} settings={settings}/>
             </div>
             <div className='latest flex gap-1 justify-between flex-wrap'>
-                <div className='w-full inline-flex justify-between items-center'><h1
-                    className='font-manrope text-3xl'>Top Rated Movies</h1><SliderButtons SlideRef={SlideRef3}/></div>
+                <div className='w-full inline-flex justify-between items-center'><h3
+                    className='font-manrope text-3xl'>Top Rated Movies</h3><SliderButtons SlideRef={SlideRef3}/></div>
                 <SliderComponent data={data2?.results} reference={SlideRef3} type={'movie'} settings={settings}/>
             </div>
         </div>
