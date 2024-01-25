@@ -4,7 +4,7 @@ import {faqs} from "@/components/utils";
 
 export default function FAQ(){
     return (
-        <div className='flex flex-col px-12 gap-4'>
+        <div className='flex flex-col px-2 md:px-12 gap-4'>
             <div className='flex flex-col md:flex-row gap-2 justify-between'>
                 <div className='flex flex-col'>
                     <h3 className='text-2xl font-manrope'>Frequently Asked Questions</h3>
@@ -16,14 +16,14 @@ export default function FAQ(){
                     Ask a question
                 </button>
             </div>
-            <div className='inline-flex  gap-4'>
-                <div className='flex flex-col w-1/2 gap-2'>
+            <div className='flex flex-col  md:flex-row gap-4'>
+                <div className='flex flex-col w-full md:w-1/2 gap-2'>
                 {faqs?.map((faq, index: number) => {
                     if(index%2==0)
                     return <QuestionCard key={faq.question} faq={faq} index={index}/>
                 })}
                 </div>
-                <div className='flex w-1/2 flex-col gap-2'>
+                <div className='flex w-full md:w-1/2 flex-col gap-2'>
                 {faqs?.map((faq, index: number) => {
                     if(index%2==1)
                     return <QuestionCard key={faq.question} faq={faq} index={index}/>
