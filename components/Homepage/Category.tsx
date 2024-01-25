@@ -76,13 +76,13 @@ export default function Category(){
     return(
         <div className='flex flex-col items-center px-6 md:px-12 py-20 gap-16 overflow-clip' id='category'>
             <div className='flex flex-row justify-between'>
-                <div className='flex flex-col'><h3 className='font-manrope text-3xl'>Explore our wide variety of
-                    categories</h3><h2 className='text-primary-grey-text text-start'>Whether you are
+                <div className='flex flex-col'><h2 className='font-manrope text-3xl'>Explore our wide variety of
+                    categories</h2><p className='text-primary-grey-text text-start'>Whether you are
                     looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn
-                    something new</h2></div>
+                    something new</p></div>
                 <div
                     className="swiper-nav-btns hidden md:inline-flex border-2 border-primary-grey gap-1 items-center text-2xl p-3 rounded-lg bg-primary-black">
-                    <button className='p-4 bg-primary-grey rounded-lg' onClick={() => handlePrev()}><FaArrowLeft/>
+                    <button aria-label='prev' className='p-4 bg-primary-grey rounded-lg' onClick={() => handlePrev()}><FaArrowLeft/>
                     </button>
                     <div className='pills inline-flex w-24 gap-1 items-center justify-center'>
                         <div className="bg-primary-grey w-full rounded-full h-2.5">
@@ -90,7 +90,7 @@ export default function Category(){
                                  style={{width: slideIndex}}></div>
                         </div>
                     </div>
-                    <button className='p-4 bg-primary-grey rounded-lg' onClick={() => handleNext()}><FaArrowRight/>
+                    <button aria-label={'next'} className='p-4 bg-primary-grey rounded-lg' onClick={() => handleNext()}><FaArrowRight/>
                     </button>
                 </div>
             </div>

@@ -18,7 +18,7 @@ export default function  QuestionCard({faq,index}:Props){
         setOpen(!open);
     }
     return(
-        <div className='question-card w-full p-4 inline-flex justify-between'>
+        <div className={`question-card transition delay-100 duration-300 ease-in w-full p-4 inline-flex justify-between`}>
             <div className='inline-flex justify-center gap-4 items-center'>
                 <div className='bg-primary-grey py-4 px-5 rounded-lg '>
                     {index+1}
@@ -29,7 +29,7 @@ export default function  QuestionCard({faq,index}:Props){
                 </div>
 
             </div>
-            <button onClick={() => handlClick()}>
+            <button aria-label={'Search'} onClick={() => handlClick()}>
                 {!open && <CiCirclePlus className='text-2xl font-bold hover:text-primary'/>}
                 {open && <CiCircleMinus className='text-2xl font-bold hover:text-primary'/>}
             </button>

@@ -84,9 +84,9 @@ export default function Page({ params }: { params: { slug: string } }){
 
                     <div className='flex items-end flex-col text-start bg-primary-grey rounded-lg p-2 md:p-10'>
                         <div className='inline-flex gap-2'>
-                        <button className='p-4 bg-primary-black rounded-lg' onClick={() => handlePrev()}><FaArrowLeft/>
+                        <button aria-label={'prev'} className='p-4 bg-primary-black rounded-lg' onClick={() => handlePrev()}><FaArrowLeft/>
                         </button>
-                        <button className='p-4 bg-primary-black rounded-lg' onClick={() => handleNext()}><FaArrowRight/>
+                        <button aria-label={'next'} className='p-4 bg-primary-black rounded-lg' onClick={() => handleNext()}><FaArrowRight/>
                         </button>
                         </div>
                         <SliderComponent data={movie.credits.cast} type={'cast'} reference={Slidref}

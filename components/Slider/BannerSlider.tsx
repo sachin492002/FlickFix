@@ -40,10 +40,10 @@ export default function BannerSlider(){
         <div className='mt-0 md:-mt-36 mb-20 h-56 md:h-[100vh] w-full md:p-0'>
             <div
                 className="hidden md:absolute top-1/3 z-10  inline-flex  gap-1 items-center text-2xl p-3 rounded-lg ">
-                <button className='p-4 bg-primary-black  rounded-lg' onClick={() => handlePrev()}><FaArrowLeft/>
+                <button aria-label={'prev'} className='p-4 bg-primary-black  rounded-lg' onClick={() => handlePrev()}><FaArrowLeft/>
                 </button>
 
-                <button className='p-4 bg-primary-black rounded-lg' onClick={() => handleNext()}><FaArrowRight/>
+                <button aria-label={'next'} className='p-4 bg-primary-black rounded-lg' onClick={() => handleNext()}><FaArrowRight/>
                 </button>
             </div>
             <Slider
@@ -55,7 +55,7 @@ export default function BannerSlider(){
                     trending?.map((g: any) => {
                         return (
                             <div className={``} key={g.title}>
-                                <Image placeholder='empty'   src={process.env.NEXT_PUBLIC_PIC_PATH +'original' + g.backdrop_path} alt={g.name} width={1920} height={200} className='object-cover'/>
+                                <Image placeholder='empty' priority={true}  src={process.env.NEXT_PUBLIC_PIC_PATH +'original' + g.backdrop_path} alt={g.name} width={1920} height={200} className='object-cover'/>
                                     <div className='absolute top-1/2 z-30 w-[50vw]'>
                                         <div className= 'flex movie-info flex-col gap-2 justify-start items-start bg-transparent rounded-lg'>
                                         <h3 className='text-md md:text-4xl'>{g.title}</h3>

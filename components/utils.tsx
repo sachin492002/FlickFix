@@ -87,5 +87,35 @@ const genres = [
         imgsrc : "/Action.png"
     },
 ];
+const faqs = [
+    {
+        question: 'What is StreamJet?',
+        ans: 'StreamJet is a streaming service that allows you to watch movies and shows on demand.'
+    },
+    {
+        question: 'How much does StreamJet cost?',
+        ans: 'StreamJet offers various subscription plans. The pricing details can be found on our website.'
+    },
+    {
+        question: 'What content is available on StreamJet?',
+        ans: 'StreamJet provides a diverse library of movies and TV shows across different genres to cater to varied interests.'
+    },
+    {
+        question: 'How can I watch StreamJet?',
+        ans: 'You can watch StreamJet on various devices, including smart TVs, computers, tablets, and smartphones. Simply download our app or visit our website to start streaming.'
+    },
+    {
+        question: 'What is the StreamJet free trial?',
+        ans: 'StreamJet offers a free trial period for new users. During this trial, you can explore our content and features at no cost. Visit our website to sign up for the free trial.'
+    },
+    {
+        question: 'How do I contact StreamJet customer support?',
+        ans: 'If you need assistance or have any inquiries, you can contact StreamJet customer support through our website. We have a dedicated support team ready to help you.'
+    },
+    {
+        question: 'What are the StreamJet payment methods?',
+        ans: 'StreamJet accepts various payment methods, including credit cards, debit cards, and digital payment platforms. You can choose the payment option that suits you best during the subscription process.'
+    }
+];
 
-export {genres}
+export {genres,faqs}

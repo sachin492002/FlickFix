@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/sachin492002/StreamJet/master/public/homegrid/hero.webp" width="100%" />
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sachin492002/StreamJet/master/app/icon.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/sachin492002/StreamJet/master/app/icon.png" width="100" />
 </p>
 <p align="center">
     <h1 align="center">STREAMJET</h1>

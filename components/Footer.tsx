@@ -24,18 +24,18 @@ export default function Footer(){
                 <div className='col-span-2 md:col-span-1 gap-4'>
                     <h3 className='font-bitter font-bold text-xl'>Connect With Us</h3>
                     <div className='inline-flex gap-4'>
-                        <Link href='https://instagram.com/xo_sachin1'>
-                    <button className='bg-primary-grey hover:bg-primary delay-75 hover:scale-125 duration-200 ease-out text-xl p-2 rounded-lg'>
+                        <Link aria-label={'instagram'} href='https://instagram.com/xo_sachin1'>
+                    <button aria-label={'instagram'} className='bg-primary-grey hover:bg-primary delay-75 hover:scale-125 duration-200 ease-out text-xl p-2 rounded-lg'>
                         <FaInstagram/>
                     </button>
                         </Link>
-                        <Link href='https://github.com/sachin492002'>
-                    <button className='bg-primary-grey hover:bg-primary delay-75 hover:scale-125 duration-200 ease-out text-xl p-2 rounded-lg'>
+                        <Link aria-label={'github'} href='https://github.com/sachin492002'>
+                    <button aria-label={'github'} className='bg-primary-grey hover:bg-primary delay-75 hover:scale-125 duration-200 ease-out text-xl p-2 rounded-lg'>
                         <FaGithub/>
                     </button>
                         </Link>
-                        <Link href='https://linkedin.com/in/sachin-meena-9188ab200'>
-                    <button className=' bg-primary-grey hover:bg-primary delay-75 hover:scale-125 duration-200 ease-out text-xl p-2 rounded-lg'>
+                        <Link aria-label={'linkedin'} href='https://linkedin.com/in/sachin-meena-9188ab200'>
+                    <button aria-label={'linkedin'} className=' bg-primary-grey hover:bg-primary delay-75 hover:scale-125 duration-200 ease-out text-xl p-2 rounded-lg'>
                         <FaLinkedinIn/>
                     </button>
                         </Link>

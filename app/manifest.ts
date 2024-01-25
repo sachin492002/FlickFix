@@ -3,9 +3,9 @@ import { MetadataRoute } from 'next'
 export default function manifest(): MetadataRoute.Manifest {
 
   return {
-    name: 'StreamJet - The best streaming platform for cinematic experiences',
+    name: 'StreamJet - Stream, Explore, Enjoy',
     short_name: 'StreamJet',
-    description: 'Generate a SiteMap',
+    description: 'Dive into a world of movies with StreamJet. Discover a curated collection ranging from classics to the latest releases',
     start_url: "https://stream-jet.vercel.app",
     display: 'standalone',
     background_color: '#1F1F1F',
