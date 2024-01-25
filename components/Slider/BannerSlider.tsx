@@ -2,10 +2,6 @@
 import React, {useRef} from "react";
 import {useAppSelector} from "@/lib/hooks";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import Image from "next/image";
 import {FaArrowLeft, FaArrowRight, FaPlay} from "react-icons/fa";
 import Slider from "react-slick";
