@@ -8,7 +8,7 @@ export default function Devices() {
     return (
         <div className='flex flex-col items-start px-4 py-6 md:py-20 md:px-12 gap-6' id='devices'>
             <h3 className='font-manrope  md:text-3xl '>We Provide you streaming experience across various devices.</h3>
-            <p className='text-primary-grey-text'>With StreamJet, you can enjoy your favorite movies and TV shows
+            <p className='text-primary-grey-text'>With FlickFix, you can enjoy your favorite movies and TV shows
                 anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that
                 you never miss a moment of entertainment.</p>
 
@@ -22,7 +22,7 @@ export default function Devices() {
                             Smartphones
                         </h4>
                     </div>
-                    <p className='text-primary-grey-text'>StreamJet is optimized for both Android and iOS smartphones.
+                    <p className='text-primary-grey-text'>FlickFix is optimized for both Android and iOS smartphones.
                         Download our app from the Google Play Store or the Apple App Store</p>
                 </div>
                 <div className='flex flex-col p-5 w-84 border-2 gap-4 border-primary-grey rounded-lg devices'>
@@ -34,7 +34,7 @@ export default function Devices() {
                             Tablet
                         </h4>
                     </div>
-                    <p className='text-primary-grey-text'>StreamJet is optimized for both Android and iOS smartphones.
+                    <p className='text-primary-grey-text'>FlickFix is optimized for both Android and iOS smartphones.
                         Download our app from the Google Play Store or the Apple App Store</p>
                 </div>
                 <div className='flex flex-col p-5 w-84 border-2 gap-4 border-primary-grey rounded-lg devices'>
@@ -47,7 +47,7 @@ export default function Devices() {
                             Laptop
                         </h4>
                     </div>
-                    <p className='text-primary-grey-text'>StreamJet is optimized for both Android and iOS smartphones.
+                    <p className='text-primary-grey-text'>FlickFix is optimized for both Android and iOS smartphones.
                         Download our app from the Google Play Store or the Apple App Store</p>
                 </div>
 

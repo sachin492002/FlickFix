@@ -9,8 +9,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'StreamJet - Stream, Explore, Enjoy',
-  description: 'Dive into a world of movies with StreamJet. Discover a curated collection ranging from classics to the latest releases.',
+  title: 'FlickFix - Stream, Explore, Enjoy',
+  description: 'Dive into a world of movies with FlickFix. Discover a curated collection ranging from classics to the latest releases.',
 }
 
 

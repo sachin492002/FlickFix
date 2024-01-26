@@ -5,7 +5,7 @@
   <img src="https://raw.githubusercontent.com/sachin492002/StreamJet/master/app/icon.png" width="100" />
 </p>
 <p align="center">
-    <h1 align="center">STREAMJET</h1>
+    <h1 align="center">FlickFix</h1>
 </p>
 <p align="center">
     <em>
@@ -32,7 +32,7 @@
 > - [ Modules](#-modules)
 > - [ Getting Started](#-getting-started)
 >   - [ Installation](#-installation)
->   - [ Running StreamJet](#-running-StreamJet)
+>   - [ Running FlickFix](#-running-FlickFix)
 >   - [ Tests](#-tests)
 > - [ Project Roadmap](#-project-roadmap)
 > - [ Contributing](#-contributing)
@@ -313,7 +313,7 @@ git clone https://github.com/sachin492002/StreamJet
 2. Change to the project directory:
 
 ```sh
-cd StreamJet
+cd FlickFix
 ```
 
 3. Install the dependencies:
@@ -322,9 +322,9 @@ cd StreamJet
 npm install
 ```
 
-###  Running StreamJet
+###  Running FlickFix
 
-Use the following command to run StreamJet:
+Use the following command to run FlickFix:
 
 ```sh
 npm run dev

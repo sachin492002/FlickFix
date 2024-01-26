@@ -55,7 +55,7 @@ export default function Navbar() {
                 <div className='inline-flex  justify-between items-center w-full'>
                     <Link href={'/'} className={!isSearchBarOpen ? 'flex items-center gap-2' : 'hidden md:flex items-center'}>
                         <Image src={logo} alt='koi'/>
-                        <span className='text-2xl font-lobster'>StreamJET</span>
+                        <span className='text-2xl font-lobster'>FlickFix</span>
                     </Link>
 
                     <div

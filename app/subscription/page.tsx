@@ -3,7 +3,7 @@ export default function Page(){
     return(
         <div className='flex flex-col items-start px-4 py-6 md:py-10 md:px-12 gap-6' id='devices'>
             <h3 className='font-manrope  md:text-3xl '>We Provide you streaming experience across various devices.</h3>
-            <p className='text-primary-grey-text'>Join StreamJet and select from our flexible subscription options
+            <p className='text-primary-grey-text'>Join FlickFix and select from our flexible subscription options
                 tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
 
             <div className='flex flex-col md:flex-row  gap-4 mt-20'>
@@ -52,7 +52,7 @@ export default function Page(){
                 </div>
             </div>
             <h3 className='pt-6 font-manrope  md:text-3xl '>Compare our plans and find the right one for you</h3>
-            <p className='text-primary-grey-text'>StreamJet offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you.</p>
+            <p className='text-primary-grey-text'>FlickFix offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you.</p>
                 <table className="pt-6 hidden md:block table-fixed text-left  gap-4 rounded-lg border border-primary-grey">
                     <thead>
                      <tr className='bg-primary-black'>
