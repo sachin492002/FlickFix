@@ -82,6 +82,10 @@ html,body,:root {
     background-size: cover;
 }
 
+.slick-dots .dotclass{
+    margin-top: 70px;
+}
+
 .slick-active .dotclass{
     background: #E50000;
 }

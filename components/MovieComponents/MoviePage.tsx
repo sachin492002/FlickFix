@@ -17,13 +17,15 @@ export default function MoviePage(){
     dispatch(addNowPlaying(data1?.results));
     const {data:data2,isFetching:isFetching3} = useGetTopRatedMoviesQuery(0);
     dispatch(addTopRated(data2?.results));
-
     const SlideRef:any = useRef();
     const SlideRef1:any = useRef();
     const SlideRef2:any = useRef();
     const SlideRef3:any = useRef();
     var settings = {
-        dots: true,
+        afterChange: (current: number) => {
+            setSlideIndex((100 / genres.length) * (4 + current));
+          },
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -52,6 +54,9 @@ export default function MoviePage(){
             {
                 breakpoint: 480,
                 settings: {
+                    afterChange: (current: number) => {
+                        setSlideIndex((400 / genres.length) * (4 + current));
+                      },
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     initialSlide: 1,
