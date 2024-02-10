@@ -22,9 +22,7 @@ export default function MoviePage(){
     const SlideRef2:any = useRef();
     const SlideRef3:any = useRef();
     var settings = {
-        afterChange: (current: number) => {
-            setSlideIndex((100 / genres.length) * (4 + current));
-          },
+        
         dots: false,
         infinite: true,
         speed: 500,
@@ -54,9 +52,7 @@ export default function MoviePage(){
             {
                 breakpoint: 480,
                 settings: {
-                    afterChange: (current: number) => {
-                        setSlideIndex((400 / genres.length) * (4 + current));
-                      },
+                   
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     initialSlide: 1,

@@ -19,7 +19,7 @@ export default function SliderButtons({SlideRef}:any){
             <div className="bg-primary-grey w-full rounded-full h-2.5">
               <div
                 className="bg-primary h-2.5 rounded-full transition duration-300 ease-in"
-                style={{ width: slideIndex }}
+                style={{ width: 25 }}
               ></div>
             </div>
           </div>
