@@ -5,9 +5,6 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2'
 
-
-
-
 export default function Support(){
     const [formData,setFormData] = useState({from_first:'',last:'',from_email:'',message:'',from_phone:''});
     const handleChange = (event:any) => {
